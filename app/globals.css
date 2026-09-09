@@ -53,3 +53,58 @@
     font-size: 36px;
   }
 }
+/* ==== เพิ่มสำหรับหน้าขายสินค้าแบบตะกร้า (POS layout) ==== */
+
+.total-display {
+  background-color: #2d3436;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.total-display span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.total-amount {
+  font-size: 48px;
+  font-weight: 800;
+  color: #00e676;
+  margin-top: 4px;
+}
+
+.pos-layout {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pos-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #00b894;
+}
+
+.checkout-btn:hover {
+  background-color: #009874;
+}
+
+@media (max-width: 700px) {
+  .pos-layout {
+    flex-direction: column;
+  }
+  .total-amount {
+    font-size: 36px;
+  }
+}
