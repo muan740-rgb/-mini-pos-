@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { supabase } from '../../lib/supabaseClient';
+// แก้ไขจุดที่ผิด: ใช้ ../ แค่ครั้งเดียวเพื่อให้หาเจอโฟลเดอร์ lib ที่อยู่ระดับเดียวกันกับ app
+import { supabase } from '../lib/supabaseClient';
 
 const currencyFormatter = new Intl.NumberFormat('th-TH', {
   style: 'currency',
